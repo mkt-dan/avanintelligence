@@ -137,7 +137,8 @@ public/                    # Static assets
 package.json               # Dependencies and scripts
 tailwind.config.ts         # Tailwind CSS configuration
 postcss.config.js          # PostCSS configuration
-tsconfig.json              # TypeScript configuration
+tsconfig.json              # Next.js-compatible TypeScript entry point
+avantsconfig.json          # Shared TypeScript configuration
 next.config.js             # Next.js configuration
 vercel.json                # Vercel deployment config
 

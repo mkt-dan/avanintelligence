@@ -21,10 +21,11 @@ module.exports = {
           900: '#8f4d28',
         },
         neon: {
-          cyan: '#00d9ff',
-          purple: '#d946ef',
-          pink: '#ec4899',
-          blue: '#3b82f6',
+          green: '#22c55e',
+          blue: '#2563eb',
+          cyan: '#60a5fa',
+          purple: '#2563eb',
+          pink: '#f8fafc',
         },
       },
       backgroundImage: {
@@ -37,7 +38,7 @@ module.exports = {
           css: {
             color: '#f3f4f6',
             a: {
-              color: '#00d9ff',
+              color: '#22c55e',
             },
           },
         },
