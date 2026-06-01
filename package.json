@@ -1,0 +1,35 @@
+{
+  "name": "avan-intelligence",
+  "version": "0.1.0",
+  "description": "Avan Intelligence - A living social experiment for rediscovering knowledge",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkt-dan/avanintelligence.git"
+  },
+  "author": {
+    "name": "Avan Intelligence",
+    "url": "https://avanintelligence.com"
+  },
+  "homepage": "https://avanintelligence.com",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "next": "^14.2.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "tailwindcss": "^3.4.3",
+    "postcss": "^8.4.38",
+    "autoprefixer": "^10.4.19"
+  }
+}
