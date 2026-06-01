@@ -26,7 +26,7 @@ export default function Navigation() {
               A
             </div>
             <span className="font-bold text-lg hidden sm:inline gradient-text">
-              Avan
+              Avan Intelligence
             </span>
           </Link>
 
