@@ -24,7 +24,7 @@ body {
 
 /* Gradient Text */
 .gradient-text {
-  @apply bg-gradient-to-r from-neon-blue via-neon-green to-neon-pink bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-neon-blue via-neon-green to-white bg-clip-text text-transparent;
 }
 
 /* Gradient Border */
@@ -34,7 +34,7 @@ body {
 
 .gradient-border::before {
   content: '';
-  @apply absolute inset-0 bg-gradient-to-r from-neon-blue via-neon-green to-neon-pink rounded-lg opacity-20 blur;
+  @apply absolute inset-0 bg-gradient-to-r from-neon-blue via-neon-green to-white rounded-lg opacity-20 blur;
   z-index: -1;
 }
 
@@ -60,7 +60,7 @@ body {
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-neon-blue via-neon-green to-neon-pink bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-neon-blue via-neon-green to-white bg-clip-text text-transparent;
   }
 }
 

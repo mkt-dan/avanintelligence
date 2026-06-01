@@ -57,8 +57,8 @@ export default function ExperiencesPage() {
                   onClick={() => setSelectedCategory(category)}
                   className={`px-4 py-2 rounded-lg transition-all ${
                     selectedCategory === category
-                      ? 'bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-semibold'
-                      : 'glass border border-white/10 text-gray-300 hover:border-neon-cyan/50'
+                      ? 'bg-gradient-to-r from-neon-blue to-neon-green text-white font-semibold'
+                      : 'glass border border-white/10 text-gray-300 hover:border-neon-blue/50'
                   }`}
                 >
                   {category}
@@ -77,8 +77,8 @@ export default function ExperiencesPage() {
                   onClick={() => setSelectedAlcohol(option)}
                   className={`px-4 py-2 rounded-lg transition-all ${
                     selectedAlcohol === option
-                      ? 'bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-semibold'
-                      : 'glass border border-white/10 text-gray-300 hover:border-neon-cyan/50'
+                      ? 'bg-gradient-to-r from-neon-blue to-neon-green text-white font-semibold'
+                      : 'glass border border-white/10 text-gray-300 hover:border-neon-blue/50'
                   }`}
                 >
                   {option}
@@ -94,7 +94,7 @@ export default function ExperiencesPage() {
               {allTags.map((tag) => (
                 <button
                   key={tag}
-                  className="px-3 py-1 text-sm rounded-full glass border border-neon-cyan/20 text-neon-cyan hover:border-neon-cyan/50 transition-all"
+                  className="px-3 py-1 text-sm rounded-full glass border border-neon-blue/20 text-neon-blue hover:border-neon-blue/50 transition-all"
                 >
                   {tag}
                 </button>
@@ -118,7 +118,7 @@ export default function ExperiencesPage() {
         </div>
 
         {/* Info Banner */}
-        <div className="glass rounded-xl p-6 border border-neon-cyan/20">
+        <div className="glass rounded-xl p-6 border border-neon-blue/20">
           <div className="flex gap-4">
             <div className="text-3xl">🌍</div>
             <div>

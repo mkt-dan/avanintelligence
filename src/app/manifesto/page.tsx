@@ -17,7 +17,7 @@ export default function ManifestoPage() {
         </div>
 
         {/* Intro */}
-        <div className="glass rounded-xl p-8 border border-neon-cyan/20 mb-16">
+        <div className="glass rounded-xl p-8 border border-neon-blue/20 mb-16">
           <p className="text-lg text-gray-300 leading-relaxed">
             Avan Intelligence exists because we believe intelligence is not what you already know, but how fast you can learn, adapt, question and act. We are building a platform that recognizes this truth and creates spaces for curious humans to evolve together.
           </p>
@@ -33,7 +33,7 @@ export default function ManifestoPage() {
             {manifestoPrinciples.map((principle, idx) => (
               <div key={principle.id} className="glass rounded-xl p-8 border border-white/10">
                 <div className="flex gap-4 mb-4">
-                  <div className="text-3xl font-bold text-neon-cyan w-8 flex-shrink-0">
+                  <div className="text-3xl font-bold text-neon-blue w-8 flex-shrink-0">
                     {idx + 1}
                   </div>
                   <h3 className="text-2xl font-bold text-white">{principle.title}</h3>
@@ -68,14 +68,14 @@ export default function ManifestoPage() {
         </div>
 
         {/* Call to Action */}
-        <div className="glass rounded-xl p-8 border border-neon-cyan/20 text-center">
+        <div className="glass rounded-xl p-8 border border-neon-blue/20 text-center">
           <h2 className="text-2xl font-bold text-white mb-4">This is a Living Manifesto</h2>
           <p className="text-gray-300 mb-6">
             We don't pretend to have all the answers. This manifesto evolves as our community grows and learns. If you believe in these principles and want to help shape the future of intelligent learning, join us.
           </p>
           <a
             href="#join"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-bold rounded-lg hover:shadow-lg hover:shadow-neon-cyan/50 transition-all"
+            className="inline-block px-8 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
           >
             Join the Experiment
           </a>

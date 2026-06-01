@@ -12,7 +12,7 @@ export default function AboutPage() {
         </div>
 
         {/* Mission */}
-        <div className="glass rounded-xl p-8 border border-neon-cyan/20 mb-12">
+        <div className="glass rounded-xl p-8 border border-neon-blue/20 mb-12">
           <h2 className="text-3xl font-bold text-white mb-4">Our Mission</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
             Avan Intelligence is a living social experiment under constant construction. We are building a platform that redefines what intelligence means in the 21st century. We believe intelligence is not what you know, but how fast you can learn, adapt, question, and act.
@@ -35,7 +35,7 @@ export default function AboutPage() {
               'Map global research communities and adaptive learning initiatives',
             ].map((item, idx) => (
               <li key={idx} className="flex gap-3">
-                <span className="text-neon-cyan font-bold flex-shrink-0">•</span>
+                <span className="text-neon-blue font-bold flex-shrink-0">•</span>
                 <span className="text-gray-300">{item}</span>
               </li>
             ))}
@@ -55,25 +55,25 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-white mb-4">What Makes Us Different</h2>
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-semibold text-neon-cyan mb-2">🚀 Not a Finished Product</h3>
+              <h3 className="text-xl font-semibold text-neon-blue mb-2">🚀 Not a Finished Product</h3>
               <p className="text-gray-300">
                 We're building Avan Intelligence in public. You'll see our experiments, iterations, and even our failures. This is intentional—we believe the best platforms evolve with their communities.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-neon-cyan mb-2">🧠 Multidisciplinary</h3>
+              <h3 className="text-xl font-semibold text-neon-blue mb-2">🧠 Multidisciplinary</h3>
               <p className="text-gray-300">
                 We embrace research from neuroscience, philosophy, biology, AI, psychology, and beyond. Knowledge doesn't live in silos, and neither should we.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-neon-cyan mb-2">🌍 Global & Local</h3>
+              <h3 className="text-xl font-semibold text-neon-blue mb-2">🌍 Global & Local</h3>
               <p className="text-gray-300">
                 Our map connects global research communities while honoring local learning experiences and cultural contexts.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-neon-cyan mb-2">📚 Community-Driven</h3>
+              <h3 className="text-xl font-semibold text-neon-blue mb-2">📚 Community-Driven</h3>
               <p className="text-gray-300">
                 Users shape the platform's direction. Your feedback, ideas, and experiences directly influence how Avan evolves.
               </p>
@@ -82,7 +82,7 @@ export default function AboutPage() {
         </div>
 
         {/* Current Status */}
-        <div className="glass rounded-xl p-8 border border-neon-cyan/20">
+        <div className="glass rounded-xl p-8 border border-neon-blue/20">
           <h2 className="text-3xl font-bold text-white mb-4">Current Status</h2>
           <p className="text-gray-300 mb-4">
             This is the MVP (Minimum Viable Product) template. It includes:
@@ -103,7 +103,7 @@ export default function AboutPage() {
         <div className="mt-12 text-center">
           <a
             href="#join"
-            className="inline-block px-8 py-4 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-bold rounded-lg hover:shadow-lg hover:shadow-neon-cyan/50 transition-all text-lg"
+            className="inline-block px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all text-lg"
           >
             Join the Experiment
           </a>

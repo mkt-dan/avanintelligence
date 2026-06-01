@@ -55,8 +55,8 @@ export default function PapersPage() {
                   onClick={() => setSelectedDiscipline(discipline)}
                   className={`px-4 py-2 rounded-lg transition-all ${
                     selectedDiscipline === discipline
-                      ? 'bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-semibold'
-                      : 'glass border border-white/10 text-gray-300 hover:border-neon-cyan/50'
+                      ? 'bg-gradient-to-r from-neon-blue to-neon-green text-white font-semibold'
+                      : 'glass border border-white/10 text-gray-300 hover:border-neon-blue/50'
                   }`}
                 >
                   {discipline}
@@ -75,8 +75,8 @@ export default function PapersPage() {
                   onClick={() => setSelectedDifficulty(level)}
                   className={`px-4 py-2 rounded-lg transition-all ${
                     selectedDifficulty === level
-                      ? 'bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-semibold'
-                      : 'glass border border-white/10 text-gray-300 hover:border-neon-cyan/50'
+                      ? 'bg-gradient-to-r from-neon-blue to-neon-green text-white font-semibold'
+                      : 'glass border border-white/10 text-gray-300 hover:border-neon-blue/50'
                   }`}
                 >
                   {level}
@@ -92,7 +92,7 @@ export default function PapersPage() {
               {allTags.map((tag) => (
                 <button
                   key={tag}
-                  className="px-3 py-1 text-sm rounded-full glass border border-neon-cyan/20 text-neon-cyan hover:border-neon-cyan/50 transition-all"
+                  className="px-3 py-1 text-sm rounded-full glass border border-neon-blue/20 text-neon-blue hover:border-neon-blue/50 transition-all"
                 >
                   {tag}
                 </button>
@@ -116,7 +116,7 @@ export default function PapersPage() {
         </div>
 
         {/* Info Banner */}
-        <div className="glass rounded-xl p-6 border border-neon-cyan/20">
+        <div className="glass rounded-xl p-6 border border-neon-blue/20">
           <div className="flex gap-4">
             <div className="text-3xl">📚</div>
             <div>

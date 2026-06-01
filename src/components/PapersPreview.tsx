@@ -19,7 +19,7 @@ export default function PapersPreview() {
           </div>
           <Link
             href="/papers"
-            className="hidden sm:inline-block px-6 py-3 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-bold rounded-lg hover:shadow-lg hover:shadow-neon-cyan/50 transition-all"
+            className="hidden sm:inline-block px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
           >
             Browse Papers
           </Link>
@@ -32,8 +32,8 @@ export default function PapersPreview() {
               key={filter}
               className={`px-3 py-1 text-sm rounded-full transition-all ${
                 filter === 'All'
-                  ? 'bg-gradient-to-r from-neon-cyan to-neon-purple text-black'
-                  : 'glass border border-white/10 text-gray-300 hover:text-neon-cyan hover:border-neon-cyan/50'
+                  ? 'bg-gradient-to-r from-neon-blue to-neon-green text-white'
+                  : 'glass border border-white/10 text-gray-300 hover:text-neon-blue hover:border-neon-blue/50'
               }`}
             >
               {filter}
@@ -50,7 +50,7 @@ export default function PapersPreview() {
 
         <Link
           href="/papers"
-          className="block sm:hidden w-full px-6 py-3 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-bold rounded-lg text-center hover:shadow-lg hover:shadow-neon-cyan/50 transition-all"
+          className="block sm:hidden w-full px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg text-center hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
         >
           Browse Papers
         </Link>

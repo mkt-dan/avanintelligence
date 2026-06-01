@@ -46,7 +46,7 @@ export default function FeedPostCard({ post }: FeedPostCardProps) {
         {post.tags.slice(0, 3).map((tag) => (
           <span
             key={tag}
-            className="text-xs px-2 py-1 rounded bg-gradient-to-r from-neon-cyan/10 to-neon-purple/10 text-neon-cyan border border-neon-cyan/20"
+            className="text-xs px-2 py-1 rounded bg-gradient-to-r from-neon-blue/10 to-neon-green/10 text-neon-blue border border-neon-blue/20"
           >
             {tag}
           </span>
@@ -54,10 +54,10 @@ export default function FeedPostCard({ post }: FeedPostCardProps) {
       </div>
 
       <div className="flex items-center gap-4 text-xs text-gray-400 border-t border-white/10 pt-4">
-        <button className="hover:text-neon-cyan transition-colors flex items-center gap-1">
+        <button className="hover:text-neon-blue transition-colors flex items-center gap-1">
           ❤️ {post.likes}
         </button>
-        <button className="hover:text-neon-cyan transition-colors flex items-center gap-1">
+        <button className="hover:text-neon-blue transition-colors flex items-center gap-1">
           💬 {post.comments}
         </button>
       </div>

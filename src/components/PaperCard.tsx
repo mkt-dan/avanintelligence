@@ -11,7 +11,7 @@ export default function PaperCard({ paper }: PaperCardProps) {
     <div className="group glass rounded-xl p-6 border border-white/10 card-hover cursor-pointer h-full flex flex-col">
       <div className="flex items-start justify-between mb-3">
         <div className="flex-1">
-          <h3 className="text-lg font-semibold text-white group-hover:text-neon-cyan transition-colors line-clamp-2">
+          <h3 className="text-lg font-semibold text-white group-hover:text-neon-blue transition-colors line-clamp-2">
             {paper.title}
           </h3>
           <p className="text-xs text-gray-400 mt-1">{paper.year}</p>
@@ -36,7 +36,7 @@ export default function PaperCard({ paper }: PaperCardProps) {
           {paper.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
-              className="text-xs px-2 py-1 rounded bg-gradient-to-r from-neon-cyan/10 to-neon-purple/10 text-neon-cyan border border-neon-cyan/20"
+              className="text-xs px-2 py-1 rounded bg-gradient-to-r from-neon-blue/10 to-neon-green/10 text-neon-blue border border-neon-blue/20"
             >
               {tag}
             </span>

@@ -2,9 +2,9 @@
 
 export default function LivingSocialExperiment() {
   return (
-    <div className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent via-neon-cyan/5 to-transparent">
+    <div className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent via-neon-blue/5 to-transparent">
       <div className="max-w-4xl mx-auto">
-        <div className="glass rounded-2xl p-8 sm:p-12 border border-neon-cyan/20 text-center">
+        <div className="glass rounded-2xl p-8 sm:p-12 border border-neon-blue/20 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             <span className="gradient-text">A Living Social Experiment</span>
           </h2>

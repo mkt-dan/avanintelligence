@@ -17,10 +17,10 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
     <div className="group glass rounded-xl p-6 border border-white/10 card-hover cursor-pointer h-full flex flex-col">
       <div className="mb-4">
-        <h3 className="text-lg font-semibold text-white group-hover:text-neon-cyan transition-colors line-clamp-2">
+        <h3 className="text-lg font-semibold text-white group-hover:text-neon-blue transition-colors line-clamp-2">
           {experience.title}
         </h3>
-        <p className="text-sm text-neon-cyan mt-1">
+        <p className="text-sm text-neon-blue mt-1">
           {experience.city}, {experience.country}
         </p>
       </div>
@@ -43,7 +43,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
             {experience.tags.slice(0, 2).map((tag) => (
               <span
                 key={tag}
-                className="text-xs px-2 py-1 rounded bg-gradient-to-r from-neon-cyan/10 to-neon-purple/10 text-neon-cyan border border-neon-cyan/20"
+                className="text-xs px-2 py-1 rounded bg-gradient-to-r from-neon-blue/10 to-neon-green/10 text-neon-blue border border-neon-blue/20"
               >
                 {tag}
               </span>

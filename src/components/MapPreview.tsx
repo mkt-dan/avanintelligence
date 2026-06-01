@@ -18,7 +18,7 @@ export default function MapPreview() {
           </div>
           <Link
             href="/map"
-            className="hidden sm:inline-block px-6 py-3 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-bold rounded-lg hover:shadow-lg hover:shadow-neon-cyan/50 transition-all"
+            className="hidden sm:inline-block px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
           >
             Explore Map
           </Link>
@@ -29,7 +29,7 @@ export default function MapPreview() {
           {mapCategories.slice(0, 6).map((category) => (
             <button
               key={category}
-              className="px-3 py-1 text-sm rounded-full glass border border-white/10 text-gray-300 hover:text-neon-cyan hover:border-neon-cyan/50 transition-all"
+              className="px-3 py-1 text-sm rounded-full glass border border-white/10 text-gray-300 hover:text-neon-blue hover:border-neon-blue/50 transition-all"
             >
               {category}
             </button>
@@ -39,18 +39,18 @@ export default function MapPreview() {
         {/* Map Preview Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {/* Visual Map Placeholder */}
-          <div className="glass rounded-xl p-6 border border-neon-cyan/20 h-80 flex items-center justify-center relative overflow-hidden group cursor-pointer">
+          <div className="glass rounded-xl p-6 border border-neon-blue/20 h-80 flex items-center justify-center relative overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 opacity-30 group-hover:opacity-50 transition-opacity">
               {randomPoints.map((point) => (
                 <div
                   key={point.id}
-                  className="absolute w-2 h-2 bg-neon-cyan rounded-full"
+                  className="absolute w-2 h-2 bg-neon-blue rounded-full"
                   style={{
                     left: `${((point.longitude + 180) / 360) * 100}%`,
                     top: `${((90 - point.latitude) / 180) * 100}%`,
                   }}
                 >
-                  <div className="absolute inset-0 bg-neon-cyan rounded-full animate-ping opacity-75"></div>
+                  <div className="absolute inset-0 bg-neon-blue rounded-full animate-ping opacity-75"></div>
                 </div>
               ))}
             </div>
@@ -67,7 +67,7 @@ export default function MapPreview() {
               <div key={point.id} className="glass rounded-lg p-4 border border-white/10 card-hover cursor-pointer">
                 <div className="flex items-start justify-between mb-2">
                   <h4 className="font-semibold text-white">{point.title}</h4>
-                  <span className="text-xs px-2 py-1 rounded bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/20">
+                  <span className="text-xs px-2 py-1 rounded bg-neon-blue/20 text-neon-blue border border-neon-blue/20">
                     {point.category}
                   </span>
                 </div>
@@ -79,7 +79,7 @@ export default function MapPreview() {
 
         <Link
           href="/map"
-          className="block sm:hidden w-full px-6 py-3 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-bold rounded-lg text-center hover:shadow-lg hover:shadow-neon-cyan/50 transition-all"
+          className="block sm:hidden w-full px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg text-center hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
         >
           Explore Map
         </Link>

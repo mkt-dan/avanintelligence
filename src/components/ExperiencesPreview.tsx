@@ -19,7 +19,7 @@ export default function ExperiencesPreview() {
           </div>
           <Link
             href="/experiences"
-            className="hidden sm:inline-block px-6 py-3 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-bold rounded-lg hover:shadow-lg hover:shadow-neon-cyan/50 transition-all"
+            className="hidden sm:inline-block px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
           >
             View Events
           </Link>
@@ -37,7 +37,7 @@ export default function ExperiencesPreview() {
           ].map((category) => (
             <button
               key={category}
-              className="px-3 py-1 text-sm rounded-full glass border border-white/10 text-gray-300 hover:text-neon-cyan hover:border-neon-cyan/50 transition-all"
+              className="px-3 py-1 text-sm rounded-full glass border border-white/10 text-gray-300 hover:text-neon-blue hover:border-neon-blue/50 transition-all"
             >
               {category}
             </button>
@@ -53,7 +53,7 @@ export default function ExperiencesPreview() {
 
         <Link
           href="/experiences"
-          className="block sm:hidden w-full px-6 py-3 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-bold rounded-lg text-center hover:shadow-lg hover:shadow-neon-cyan/50 transition-all"
+          className="block sm:hidden w-full px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg text-center hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
         >
           View Events
         </Link>

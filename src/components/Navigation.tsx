@@ -22,7 +22,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-gradient-to-br from-neon-cyan to-neon-purple rounded-lg flex items-center justify-center text-white font-bold text-sm">
+            <div className="w-8 h-8 bg-gradient-to-br from-neon-blue to-neon-green rounded-lg flex items-center justify-center text-white font-bold text-sm">
               A
             </div>
             <span className="font-bold text-lg hidden sm:inline gradient-text">
@@ -36,7 +36,7 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors duration-200"
+                className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-neon-blue transition-colors duration-200"
               >
                 {item.label}
               </Link>
@@ -47,7 +47,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="#join"
-              className="px-4 py-2 text-sm font-medium bg-gradient-to-r from-neon-cyan to-neon-purple text-black rounded-lg hover:shadow-lg hover:shadow-neon-cyan/50 transition-all duration-200"
+              className="px-4 py-2 text-sm font-medium bg-gradient-to-r from-neon-blue to-neon-green text-white rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all duration-200"
             >
               Join
             </a>
@@ -56,7 +56,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-gray-300 hover:text-neon-cyan transition-colors"
+            className="md:hidden p-2 text-gray-300 hover:text-neon-blue transition-colors"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -77,7 +77,7 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors"
+                  className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-neon-blue transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
@@ -85,7 +85,7 @@ export default function Navigation() {
               ))}
               <a
                 href="#join"
-                className="px-4 py-2 text-sm font-medium bg-gradient-to-r from-neon-cyan to-neon-purple text-black rounded-lg text-center"
+                className="px-4 py-2 text-sm font-medium bg-gradient-to-r from-neon-blue to-neon-green text-white rounded-lg text-center"
               >
                 Join
               </a>

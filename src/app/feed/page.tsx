@@ -44,8 +44,8 @@ export default function FeedPage() {
               onClick={() => setSelectedType(null)}
               className={`px-4 py-2 rounded-lg transition-all ${
                 selectedType === null
-                  ? 'bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-semibold'
-                  : 'glass border border-white/10 text-gray-300 hover:border-neon-cyan/50'
+                  ? 'bg-gradient-to-r from-neon-blue to-neon-green text-white font-semibold'
+                  : 'glass border border-white/10 text-gray-300 hover:border-neon-blue/50'
               }`}
             >
               All Posts
@@ -63,8 +63,8 @@ export default function FeedPage() {
                 onClick={() => setSelectedType(selectedType === type ? null : type)}
                 className={`px-3 py-1 text-sm rounded-full transition-all ${
                   selectedType === type
-                    ? 'bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-semibold'
-                    : 'glass border border-white/10 text-gray-300 hover:border-neon-cyan/50'
+                    ? 'bg-gradient-to-r from-neon-blue to-neon-green text-white font-semibold'
+                    : 'glass border border-white/10 text-gray-300 hover:border-neon-blue/50'
                 }`}
               >
                 {type}
@@ -87,7 +87,7 @@ export default function FeedPage() {
         </div>
 
         {/* Info Banner */}
-        <div className="mt-12 glass rounded-xl p-6 border border-neon-cyan/20">
+        <div className="mt-12 glass rounded-xl p-6 border border-neon-blue/20">
           <div className="flex gap-4">
             <div className="text-3xl">📡</div>
             <div>

@@ -23,7 +23,7 @@ export default function ManifestoCover() {
                 animationDelay: `${idx * 100}ms`,
               }}
             >
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-neon-cyan transition-colors">
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-neon-blue transition-colors">
                 {principle.title}
               </h3>
               <p className="text-gray-300 leading-relaxed">{principle.description}</p>
@@ -34,7 +34,7 @@ export default function ManifestoCover() {
         <div className="text-center">
           <Link
             href="/manifesto"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-bold rounded-lg hover:shadow-lg hover:shadow-neon-cyan/50 transition-all"
+            className="inline-block px-8 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
           >
             Read Full Manifesto
           </Link>

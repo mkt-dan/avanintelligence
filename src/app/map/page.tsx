@@ -31,8 +31,8 @@ export default function MapPage() {
               onClick={() => setSelectedCategory(null)}
               className={`px-4 py-2 rounded-lg transition-all ${
                 selectedCategory === null
-                  ? 'bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-semibold'
-                  : 'glass border border-white/10 text-gray-300 hover:border-neon-cyan/50'
+                  ? 'bg-gradient-to-r from-neon-blue to-neon-green text-white font-semibold'
+                  : 'glass border border-white/10 text-gray-300 hover:border-neon-blue/50'
               }`}
             >
               All Categories
@@ -43,8 +43,8 @@ export default function MapPage() {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-lg transition-all ${
                   selectedCategory === category
-                    ? 'bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-semibold'
-                    : 'glass border border-white/10 text-gray-300 hover:border-neon-cyan/50'
+                    ? 'bg-gradient-to-r from-neon-blue to-neon-green text-white font-semibold'
+                    : 'glass border border-white/10 text-gray-300 hover:border-neon-blue/50'
                 }`}
               >
                 {category}
@@ -57,19 +57,19 @@ export default function MapPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Map */}
           <div className="lg:col-span-2">
-            <div className="glass rounded-xl p-8 border border-neon-cyan/20 h-96 flex items-center justify-center relative overflow-hidden group">
+            <div className="glass rounded-xl p-8 border border-neon-blue/20 h-96 flex items-center justify-center relative overflow-hidden group">
               <div className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity">
                 {filteredPoints.map((point) => (
                   <div
                     key={point.id}
-                    className="absolute w-3 h-3 bg-neon-cyan rounded-full cursor-pointer hover:scale-150 transition-transform"
+                    className="absolute w-3 h-3 bg-neon-blue rounded-full cursor-pointer hover:scale-150 transition-transform"
                     title={point.title}
                     style={{
                       left: `${((point.longitude + 180) / 360) * 100}%`,
                       top: `${((90 - point.latitude) / 180) * 100}%`,
                     }}
                   >
-                    <div className="absolute inset-0 bg-neon-cyan rounded-full animate-ping opacity-75"></div>
+                    <div className="absolute inset-0 bg-neon-blue rounded-full animate-ping opacity-75"></div>
                   </div>
                 ))}
               </div>
@@ -93,7 +93,7 @@ export default function MapPage() {
                   className="glass rounded-lg p-4 border border-white/10 card-hover cursor-pointer"
                 >
                   <h4 className="font-semibold text-white mb-1">{point.title}</h4>
-                  <p className="text-xs text-neon-cyan mb-2">{point.category}</p>
+                  <p className="text-xs text-neon-blue mb-2">{point.category}</p>
                   <p className="text-sm text-gray-400">{point.description}</p>
                 </div>
               ))}
@@ -102,7 +102,7 @@ export default function MapPage() {
         </div>
 
         {/* Info Banner */}
-        <div className="mt-12 glass rounded-xl p-6 border border-neon-cyan/20">
+        <div className="mt-12 glass rounded-xl p-6 border border-neon-blue/20">
           <div className="flex gap-4">
             <div className="text-3xl">💡</div>
             <div>
