@@ -11,7 +11,10 @@ export default function DonkeyPost() {
           <p className="text-gray-400">Or how a restless mind turned chaos into a website</p>
         </div>
 
-        <img src="/blog/donkey.svg" alt="Donkey illustration" className="w-full h-64 object-cover rounded-lg mb-8" />
+        <figure>
+          <img src="https://source.unsplash.com/xdNgq1R15QY/1200x800" alt="Donkey illustration" className="w-full h-64 object-cover rounded-lg mb-2" />
+          <figcaption className="text-sm text-gray-400 mb-8 text-center sm:text-left">Photo by <a href="https://unsplash.com/@youandigraphics" target="_blank" rel="noopener noreferrer" className="underline">Irene Demetri</a> on <a href="https://unsplash.com/photos/xdNgq1R15QY" target="_blank" rel="noopener noreferrer" className="underline">Unsplash</a></figcaption>
+        </figure>
 
         <article className="prose prose-invert max-w-none text-lg leading-relaxed">
           <h2>Or how a restless mind turned chaos into a website</h2>

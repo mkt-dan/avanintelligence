@@ -11,7 +11,10 @@ export default function PharmaPost() {
           <p className="text-gray-400">Reflexión sobre trabajar en la industria farmacéutica y la contradicción frente a la salud mental.</p>
         </div>
 
-        <img src="/blog/pharma.svg" alt="Pharma illustration" className="w-full h-64 object-cover rounded-lg mb-8" />
+        <figure>
+          <img src="https://source.unsplash.com/t5ItfWRLJM0/1200x800" alt="Pharma illustration" className="w-full h-64 object-cover rounded-lg mb-2" />
+          <figcaption className="text-sm text-gray-400 mb-8 text-center sm:text-left">Photo by <a href="https://unsplash.com/@gettyimages" target="_blank" rel="noopener noreferrer" className="underline">Getty Images</a> on <a href="https://unsplash.com/photos/t5ItfWRLJM0" target="_blank" rel="noopener noreferrer" className="underline">Unsplash</a></figcaption>
+        </figure>
 
         <article className="prose prose-invert max-w-none text-lg leading-relaxed">
           <p>I worked in Pharma for seven years.</p>
