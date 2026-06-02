@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="gp" x1="0" x2="1">
+      <stop offset="0" stop-color="#FDE047" />
+      <stop offset="1" stop-color="#FB923C" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#071013" />
+  <g transform="translate(80,100)">
+    <rect x="40" y="40" width="480" height="160" rx="12" fill="#fff" opacity="0.06" />
+    <g fill="#E6EEF8" stroke="#0f172a" stroke-width="2">
+      <rect x="80" y="80" width="160" height="100" rx="8" fill="url(#gp)" />
+      <rect x="260" y="80" width="160" height="100" rx="8" fill="#e6eef8" />
+      <rect x="440" y="80" width="40" height="100" rx="8" fill="#e6eef8" />
+    </g>
+    <text x="40" y="220" fill="#cbd5e1" font-size="20" font-family="Arial, sans-serif">Big Pharma — paradoja</text>
+  </g>
+</svg>
