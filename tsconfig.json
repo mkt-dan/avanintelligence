@@ -1,7 +1,6 @@
 {
   "extends": "./avantsconfig.json",
   "compilerOptions": {
-    "ignoreDeprecations": "5.0",
     "plugins": [
       {
         "name": "next"
