@@ -22,8 +22,8 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-gradient-to-br from-neon-blue to-neon-green rounded-lg flex items-center justify-center text-white font-bold text-sm">
-              A
+            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-neon-blue font-bold text-sm">
+              🧠
             </div>
             <span className="font-bold text-lg hidden sm:inline gradient-text">
               Avan Intelligence
