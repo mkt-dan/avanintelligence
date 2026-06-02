@@ -16,8 +16,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "typecheck": "tsc -p avantsconfig.json --noEmit"
+    "lint": "next lint"
   },
   "dependencies": {
     "react": "^18.3.1",
