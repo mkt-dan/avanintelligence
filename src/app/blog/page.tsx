@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function BlogIndex() {
   return (
     <div className="min-h-screen pt-20 pb-20">
@@ -18,9 +16,7 @@ export default function BlogIndex() {
             <div>
               <h2 className="text-2xl font-bold mb-2">The Case of the Donkey: San-Ti, ADHD, and the Search for the Right Specialist</h2>
               <p className="text-gray-300 mb-3">Or how a restless mind turned chaos into a website — una historia personal sobre diagnóstico, metáforas y búsqueda de regulación.</p>
-              <Link href="/blog/the-case-of-the-donkey">
-                <a className="inline-block px-4 py-2 bg-neon-blue text-white rounded-md">Leer entrada</a>
-              </Link>
+              <a href="/blog/the-case-of-the-donkey" className="inline-block px-4 py-2 bg-neon-blue text-white rounded-md">Leer entrada</a>
             </div>
           </article>
 
@@ -32,9 +28,7 @@ export default function BlogIndex() {
             <div>
               <h2 className="text-2xl font-bold mb-2">The Big Pharma Paradox</h2>
               <p className="text-gray-300 mb-3">Reflexión sobre trabajar en la industria farmacéutica y la contradicción frente a la salud mental.</p>
-              <Link href="/blog/the-big-pharma-paradox">
-                <a className="inline-block px-4 py-2 bg-neon-blue text-white rounded-md">Leer entrada</a>
-              </Link>
+              <a href="/blog/the-big-pharma-paradox" className="inline-block px-4 py-2 bg-neon-blue text-white rounded-md">Leer entrada</a>
             </div>
           </article>
         </div>

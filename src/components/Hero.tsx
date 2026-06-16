@@ -33,7 +33,7 @@ export default function Hero() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="#join"
+            href="/#join"
             className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all duration-300 text-lg"
           >
             Join the Knowledge Network

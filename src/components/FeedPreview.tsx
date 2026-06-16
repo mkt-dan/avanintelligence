@@ -2,7 +2,6 @@
 
 import FeedPostCard from './FeedPostCard';
 import { feedPosts } from '@/data/feed';
-import Link from 'next/link';
 
 export default function FeedPreview() {
   const previewPosts = feedPosts.slice(0, 3);
@@ -17,12 +16,12 @@ export default function FeedPreview() {
             </h2>
             <p className="text-xl text-gray-400">Papers shared, findings discovered, questions asked, experiences lived</p>
           </div>
-          <Link
+          <a
             href="/feed"
             className="hidden sm:inline-block px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
           >
             View Feed
-          </Link>
+          </a>
         </div>
 
         {/* Feed Filters */}
@@ -51,12 +50,12 @@ export default function FeedPreview() {
           ))}
         </div>
 
-        <Link
+        <a
           href="/feed"
           className="block sm:hidden w-full px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg text-center hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
         >
           View Feed
-        </Link>
+        </a>
       </div>
     </div>
   );

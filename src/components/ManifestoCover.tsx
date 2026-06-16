@@ -1,7 +1,6 @@
 'use client';
 
 import { manifestoPrinciples } from '@/data/manifesto';
-import Link from 'next/link';
 
 export default function ManifestoCover() {
   return (
@@ -32,12 +31,12 @@ export default function ManifestoCover() {
         </div>
 
         <div className="text-center">
-          <Link
+          <a
             href="/manifesto"
             className="inline-block px-8 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
           >
             Read Full Manifesto
-          </Link>
+          </a>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ A living social experiment for rediscovering knowledge together.
 
 ## 🚀 Project Overview
 
-Avan Intelligence is a modern, responsive web platform built with Next.js, TypeScript, and Tailwind CSS. It's designed to be a social knowledge network where curious humans share papers, findings, scientific experiences, and questions to collectively redefine intelligence.
+Avan Intelligence is a modern, responsive web platform built with Astro, React islands, TypeScript, and Tailwind CSS. It's designed to be a social knowledge network where curious humans share papers, findings, scientific experiences, and questions to collectively redefine intelligence.
 
 **Core Tagline:** Rediscovering Knowledge.
 
@@ -43,7 +43,8 @@ Avan Intelligence is a modern, responsive web platform built with Next.js, TypeS
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js 14.2
+- **Framework:** Astro
+- **Interactive UI:** React islands
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **Package Manager:** npm
@@ -78,14 +79,16 @@ Avan Intelligence is a modern, responsive web platform built with Next.js, TypeS
 ### Build for Production
 ```bash
 npm run build
-npm start
+npm run preview
 ```
 
 ## 📂 Project Structure
 
 ```
 src/
-├── app/                    # Next.js app directory
+├── pages/                  # Astro route files
+├── layouts/                # Astro layouts
+├── app/                    # Legacy React page components used during migration
 │   ├── layout.tsx         # Root layout
 │   ├── globals.css        # Global styles
 │   ├── page.tsx           # Home page
@@ -137,9 +140,9 @@ public/                    # Static assets
 package.json               # Dependencies and scripts
 tailwind.config.ts         # Tailwind CSS configuration
 postcss.config.js          # PostCSS configuration
-tsconfig.json              # Next.js-compatible TypeScript entry point
+tsconfig.json              # Astro-compatible TypeScript entry point
 avantsconfig.json          # Shared TypeScript configuration
-next.config.js             # Next.js configuration
+astro.config.mjs           # Astro configuration
 vercel.json                # Vercel deployment config
 
 src/config/
@@ -235,7 +238,7 @@ This is a **living social experiment** under constant construction:
 
 ## 🚀 Deployment
 
-### Deploy to Vercel (Recommended for Next.js)
+### Deploy to Vercel
 ```bash
 npm install -g vercel
 vercel
@@ -243,7 +246,7 @@ vercel
 
 ### Deploy to Other Platforms
 1. Run `npm run build`
-2. Deploy the `.next` folder with Node.js runtime
+2. Deploy the generated `dist` folder
 3. Set `NODE_ENV=production`
 
 ## 📖 Development Tips

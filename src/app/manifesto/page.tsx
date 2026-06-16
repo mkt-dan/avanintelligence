@@ -74,7 +74,7 @@ export default function ManifestoPage() {
             We don't pretend to have all the answers. This manifesto evolves as our community grows and learns. If you believe in these principles and want to help shape the future of intelligent learning, join us.
           </p>
           <a
-            href="#join"
+            href="/#join"
             className="inline-block px-8 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
           >
             Join the Experiment

@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Navigation() {
@@ -22,32 +21,32 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <a href="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-neon-blue font-bold text-sm">
               🧠
             </div>
             <span className="font-bold text-lg hidden sm:inline gradient-text">
               Avan Intelligence
             </span>
-          </Link>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
                 className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-neon-blue transition-colors duration-200"
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="#join"
+              href="/#join"
               className="px-4 py-2 text-sm font-medium bg-gradient-to-r from-neon-blue to-neon-green text-white rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all duration-200"
             >
               Join
@@ -75,17 +74,17 @@ export default function Navigation() {
           <div className="md:hidden pb-4 border-t border-white/10">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.href}
                   href={item.href}
                   className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-neon-blue transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
-                </Link>
+                </a>
               ))}
               <a
-                href="#join"
+                href="/#join"
                 className="px-4 py-2 text-sm font-medium bg-gradient-to-r from-neon-blue to-neon-green text-white rounded-lg text-center"
               >
                 Join

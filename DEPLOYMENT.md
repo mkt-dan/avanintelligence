@@ -34,7 +34,7 @@ npm install
 ### 4. Test Build Locally
 ```bash
 npm run build
-npm start
+npm run preview
 ```
 
 Visit `http://localhost:3000` to verify it works.
@@ -50,10 +50,10 @@ Visit `http://localhost:3000` to verify it works.
    - Select `mkt-dan/avanintelligence`
 
 2. **Configure Project**
-   - Framework: Next.js
+   - Framework: Astro
    - Root Directory: `.`
    - Build Command: `npm run build`
-   - Output Directory: `.next`
+   - Output Directory: `dist`
 
 3. **Environment Variables**
    - Add `NEXT_PUBLIC_BASE_URL`: `https://avanintelligence.com`
@@ -207,25 +207,25 @@ NEXT_PUBLIC_SITE_NAME = Avan Intelligence
 ```bash
 # Build and test locally
 npm run build
-npm start
+npm run preview
 
 # Run type checking
-npm run lint
+npm run check
 
 # Build production optimized version
 npm run build
 
 # Check bundle size
 npm run build
-# Look at .next/static folder
+# Look at dist/_astro folder
 ```
 
 ## Troubleshooting
 
 ### Build Fails
 - Check Node version: `node --version` (should be 18+)
-- Clear cache: `rm -rf .next node_modules && npm install`
-- Check for TypeScript errors: `npm run lint`
+- Clear cache: `rm -rf .astro dist node_modules && npm install`
+- Check for TypeScript errors: `npm run check`
 
 ### Domain Not Working
 - DNS can take 24-48 hours to propagate
@@ -255,7 +255,7 @@ npm run build
 ## Additional Resources
 
 - [Vercel Documentation](https://vercel.com/docs)
-- [Next.js Deployment](https://nextjs.org/docs/deployment)
+- [Astro Deployment](https://docs.astro.build/en/guides/deploy/)
 - [GitHub Actions Guide](https://docs.github.com/en/actions)
 - [DNS Setup Guide](https://vercel.com/docs/concepts/projects/domains)
 

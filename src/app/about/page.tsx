@@ -88,7 +88,7 @@ export default function AboutPage() {
             This is the MVP (Minimum Viable Product) template. It includes:
           </p>
           <ul className="space-y-2 text-gray-300 mb-6">
-            <li>✓ Next.js with TypeScript</li>
+            <li>✓ Astro with TypeScript</li>
             <li>✓ Responsive design with Tailwind CSS</li>
             <li>✓ Mock data for demonstration</li>
             <li>✓ Component-based architecture</li>
@@ -102,7 +102,7 @@ export default function AboutPage() {
         {/* CTA */}
         <div className="mt-12 text-center">
           <a
-            href="#join"
+            href="/#join"
             className="inline-block px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all text-lg"
           >
             Join the Experiment

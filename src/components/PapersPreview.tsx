@@ -2,7 +2,6 @@
 
 import PaperCard from './PaperCard';
 import { papers } from '@/data/papers';
-import Link from 'next/link';
 
 export default function PapersPreview() {
   const previewPapers = papers.slice(0, 3);
@@ -17,12 +16,12 @@ export default function PapersPreview() {
             </h2>
             <p className="text-xl text-gray-400">Curated papers on learning, intelligence, neuroscience, philosophy, and beyond</p>
           </div>
-          <Link
+          <a
             href="/papers"
             className="hidden sm:inline-block px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
           >
             Browse Papers
-          </Link>
+          </a>
         </div>
 
         {/* Filters */}
@@ -48,12 +47,12 @@ export default function PapersPreview() {
           ))}
         </div>
 
-        <Link
+        <a
           href="/papers"
           className="block sm:hidden w-full px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg text-center hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
         >
           Browse Papers
-        </Link>
+        </a>
       </div>
     </div>
   );

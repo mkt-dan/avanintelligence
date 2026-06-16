@@ -1,0 +1,51 @@
+---
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
+import { siteConfig, getCanonicalUrl } from '@/config/site';
+import '../app/globals.css';
+
+const {
+  title = 'Avan Intelligence - Redefining Knowledge, Together',
+  description = siteConfig.description,
+} = Astro.props;
+
+const ogImage = getCanonicalUrl(siteConfig.ogImage);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="knowledge network, scientific research, learning platform, adaptive learning, philosophy, neuroscience, community learning"
+    />
+    <meta name="author" content="Avan Intelligence" />
+    <meta name="creator" content="Avan Intelligence" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content={siteConfig.url} />
+    <meta property="og:site_name" content={siteConfig.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={siteConfig.name} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@avanintelligence" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+  </head>
+  <body class="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <Navigation client:load />
+    <main class="min-h-screen">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -71,7 +71,7 @@ In GitHub → Settings → Branches → Add rule for `main`:
 - ✅ Require code review before merging (at least 1)
 - ✅ Require branches to be up to date before merging
 - ✅ Require status checks to pass before merging
-  - `build` (Next.js build)
+  - `build` (Astro build)
   - `lint` (TypeScript/ESLint)
 
 ## Continuous Integration/Deployment
@@ -206,7 +206,7 @@ git checkout -b feature/amazing-feature
 # Edit files as needed
 
 # Check for errors
-npm run lint
+npm run check
 
 # Test build
 npm run build
@@ -240,7 +240,7 @@ git push origin feature/amazing-feature
 │  GitHub Actions Workflow Triggers   │
 │  - Install dependencies             │
 │  - Run linter                       │
-│  - Build Next.js app                │
+│  - Build Astro app                  │
 └────────────────┬────────────────────┘
                  │
         ┌────────┴────────┐

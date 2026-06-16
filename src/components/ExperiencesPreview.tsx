@@ -2,7 +2,6 @@
 
 import ExperienceCard from './ExperienceCard';
 import { experiences } from '@/data/experiences';
-import Link from 'next/link';
 
 export default function ExperiencesPreview() {
   const previewExperiences = experiences.slice(0, 3);
@@ -17,12 +16,12 @@ export default function ExperiencesPreview() {
             </h2>
             <p className="text-xl text-gray-400">Global events, meetups, and experiences for curious learners</p>
           </div>
-          <Link
+          <a
             href="/experiences"
             className="hidden sm:inline-block px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
           >
             View Events
-          </Link>
+          </a>
         </div>
 
         {/* Category Filters */}
@@ -51,12 +50,12 @@ export default function ExperiencesPreview() {
           ))}
         </div>
 
-        <Link
+        <a
           href="/experiences"
           className="block sm:hidden w-full px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-green text-white font-bold rounded-lg text-center hover:shadow-lg hover:shadow-neon-blue/50 transition-all"
         >
           View Events
-        </Link>
+        </a>
       </div>
     </div>
   );

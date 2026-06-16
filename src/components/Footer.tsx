@@ -59,7 +59,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-400 hover:text-neon-blue transition-colors">
+                <a href="/about" className="text-sm text-gray-400 hover:text-neon-blue transition-colors">
                   FAQ
                 </a>
               </li>
